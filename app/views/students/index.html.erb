@@ -1,0 +1,6 @@
+<ul>
+<% @students.each do |student| %> 
+  <li><%= student["first"] %> <%= student["last"] %> - <%= student["hometown"] %> </li>
+  <img src="<%= student["picture"]%>">
+<% end %>
+</ul>
